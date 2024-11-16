@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: rgba(72, 163, 0, 0.07);
+  font-family: "Poppins", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.main {
+  font-weight: 700;
+  font-size: 64px;
+  color: rgba(72, 163, 0, 1);
+  margin-bottom: 30px;
+}
+
+.main span {
+  color: rgba(97, 72, 28, 1)
+}
+
+.container {
+  width: 60%;
+  height: auto;
+  background-color: rgba(251, 251, 251, 1);
+  padding: 29px 42px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.068);
+
+}
+
+.hading-text {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+
+.handle_image {
+
+
+  animation: rotate 5s linear infinite;
+}
+
+/* image animation to rounded */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mot {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(133, 133, 133, 1);
+  margin: 18px 0px;
+
+
+}
+
+.process_bar {
+  width: 100%;
+  height: 35px;
+  background-color: rgba(72, 163, 0, 0.1);
+  border-radius: 15px;
+  margin: 22px 0 60px 0;
+}
+
+.process_bar_grine {
+  
+  height: 100%;
+  background: rgba(72, 163, 0, 1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  width: 0;
+  overflow: hidden;
+  
+}
+
+.process_bar_grine p {
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(238, 255, 224, 1);
+  padding-left: 20px;
+}
+
+.warning {
+  color: rgba(255, 81, 81, 1);
+  font-weight: 400px;
+  font-size: 16px;
+  margin: 10px 0;
+  display: none;
+}
+
+.handle_input {
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 23px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.handle_input input {
+  font-size: 17px;
+  align-self: stretch;
+  width: 100%;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 17px;
+  padding-left: 10px;
+  font-family: inherit;
+
+}
+
+.Completed input {
+  color: rgba(72, 163, 0, 1);
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.handle_input input::placeholder {
+  color: rgba(217, 217, 217, 1);
+  font: inherit;
+}
+
+
+
+.check_box {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(83, 69, 45, 0.3);
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.check_display {
+  display: none;
+}
+
+
+/*    this is togle class */
+
+
+.Completed .check_box .check_display {
+  display: block;
+}
+
+.quts {
+  text-align: center;
+  margin: 46px 0;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.made_by {
+  text-align: center;
+  margin: 10px 0px 20px 0;
+}
+
+
+
+
+/* responsive degines  */
+
+
+@media (max-width: 520px) {
+  .main {
+    font-size: 45px;
+  }
+
+  .container {
+    width: 78%;
+    padding: 28px 21px;
+  }
+
+  .handle_input {
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+}
